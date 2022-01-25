@@ -1,0 +1,38 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.photo{
+	width: 250px;
+	height: 250px;
+	margin: auto;
+	margin-top: 150px;
+	overflow: hidden;
+	position: relative;
+
+}
+.icon{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	visibility: hidden;
+} 
+ .photo .myphoto{
+	width: 250px;
+	height: 250px;
+	transition: 0.5s;
+}
+
+.photo .myphoto:hover{
+	opacity: 0.5;
+	transform: scale(1.2, 1.2);
+}
+
+.photo:hover .icon{
+	visibility: visible;
+}
